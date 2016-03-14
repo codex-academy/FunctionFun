@@ -1,3 +1,8 @@
+---
+layout: default
+title: Winter or what
+---
+
 # Winter or what
 
 Your friend send you this message:

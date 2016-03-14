@@ -1,0 +1,207 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+        "normalize",
+        "h5bp",
+        "syntax-highlighting"
+;
+
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+  padding: 1em;
+}
+
+.wf-active body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  &:link, &:visited {
+    color: #8bc53f;
+  }
+}
+
+a {
+  &:hover, &:active {
+    color: darken(#8bc53f, 20%);
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.wf-active {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+}
+
+.site-header {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: solid 1px #ccc;
+  background-color: #fff;
+}
+
+main {
+  padding: 1em;
+  background-color: #fff;
+  [data-task-number] {
+    text-transform: none;
+    &:before {
+      content: attr(data-task-number) "/10: ";
+      color: #666;
+    }
+  }
+}
+
+.logo {
+  margin-right: 5%;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.menu {
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  margin: 1em 0;
+  display: inline-block;
+  &:link, &:visited {
+    background-color: #8bc53f;
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    background-color: darken(#8bc53f, 20%);
+    color: #fff;
+  }
+}
+
+.main-nav {
+  background-color: #444;
+  line-height: 1;
+  ul, ol {
+    color: #fff;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    > ul a, ol a {
+      padding-left: 1.8em;
+    }
+  }
+  .active {
+    background-color: #666;
+  }
+  a {
+    display: block;
+    padding: 0.75em 0.5em;
+    &:link, &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:hover, &:active {
+      color: #fff;
+      background-color: #888;
+      text-decoration: underline;
+    }
+  }
+  ol {
+    counter-reset: mainnav;
+    a {
+      counter-increment: mainnav;
+      &:before {
+        content: counter(mainnav) ".";
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+blockquote {
+  background-color: #eee;
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 0.25em;
+}
+
+code:not([class]), .highlighter-rouge {
+  padding: 0.25em;
+  background-color: #eee;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+td,
+th {
+  padding: 0.2em;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout */
+
+@media (min-width: 60em) {
+  .menu {
+    display: none;
+  }
+  .site-header,
+  .site-footer {
+    float: left;
+    clear: left;
+    width: 35%;
+  }
+  main {
+    float: right;
+    width: 60%;
+  }
+}
+
+.single {
+  body {
+    padding: 0;
+  }
+  @media (min-width: 60em) {
+    .site-header,
+    .site-footer {
+      float: none;
+      clear: none;
+      width: auto;
+    }
+    main {
+      float: none;
+      width: auto;
+      margin-right: 25%;
+      margin-left: 25%;
+    }
+  }
+}
+
+.pull-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.pull-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}

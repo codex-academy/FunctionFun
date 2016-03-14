@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <nav class="main-nav" id="menu">
+    <ol>
+      <li>
+        <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class = "active"{% endif %}>Index</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/winter.html" {% if page.url == "/winter.html" %}class = "active"{% endif %}>Winter or what</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/eating-out.html" {% if page.url == "/eating-out.html" %}class = "active"{% endif %}>Eating out</a>
+      </li>
+    </ol>
+  </nav>
+</footer>

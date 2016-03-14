@@ -1,3 +1,8 @@
+---
+layout: default
+title: Eating out
+---
+
 ## Eating out.
 
 Xola took the sports team he manage out for the evening. The next morning he got these whatsapps from the restuarant owner.
