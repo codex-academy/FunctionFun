@@ -18,3 +18,15 @@ message 2
 Write some functions to calculate how much money Xola should EFT.
 
 Remember to write some tests first.
+
+## Also
+
+Your function should also be able to work out how much Joe should pay.
+
+message 1:
+
+`Hi Joe thanks for joining us yesterday. Your team ate 11 pies, drank 17 cokes and 5 pepsi's`
+
+message 2
+
+`Please send me the payment via EFT prices are as follows: pies - 19 each, cokes - 11, pepsi's 9`
