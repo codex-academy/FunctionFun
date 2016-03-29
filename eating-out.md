@@ -21,7 +21,7 @@ Remember to write some tests first.
 
 ## Also
 
-Your function should also be able to work out how much Joe should pay.
+Your functions should also be able to work out how much Joe should pay.
 
 message 1:
 
