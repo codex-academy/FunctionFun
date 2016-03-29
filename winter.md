@@ -11,4 +11,8 @@ Your friend sent you this message:
 
 Write some functions to find the hottest and coldest place tomorrow using the message above.
 
+Your code should also work for this international weather message you got from another friend:
+
+`Look it is finally summer in the northern hemisphere tomorrow: in New York 25, in London 22, in Buenos Aires 33 and in Madrid 29`
+
 Remember to write some tests first.
