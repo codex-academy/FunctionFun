@@ -11,7 +11,7 @@ message 1:
 
 `Hi Xola thanks for joining us last night. Your team ate 8 burgers, drank 17 beers and 11 fanta's`
 
-message 2
+message 2:
 
 `Please send me the payment via EFT prices are as follows: burgers - 37 each, beers - 12, fanta's 9`
 
@@ -27,6 +27,6 @@ message 1:
 
 `Hi Joe thanks for joining us yesterday. Your team ate 11 pies, drank 17 cokes and 5 pepsi's`
 
-message 2
+message 2:
 
 `Please send me the payment via EFT prices are as follows: pies - 19 each, cokes - 11, pepsi's 9`
