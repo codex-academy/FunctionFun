@@ -1,3 +1,3 @@
 # Function fun
 
-Two scenarios to help you practice your javascript and logical thinking skills.
+Two scenarios to help you practice your JavaScript and logical thinking skills.
